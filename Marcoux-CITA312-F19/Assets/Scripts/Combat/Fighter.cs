@@ -17,7 +17,7 @@ namespace RPG.Combat
         {
             timeSinceLastAttack += Time.deltaTime;
 
-            if (target == null) return;
+            if (target == null) { return; }
             if (target.IsDead()) return;
 
             // move only if a target is NOT within range
